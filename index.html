@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+  <head>
+  	<title>Disney Renaissance Survey</title>
+  	<script type="text/javascript" src="./js/disneyform.js"></script>
+  	<link rel="stylesheet" type="text/css" href="./css/disneypage.css">
+  </head>
+  <body>
+  	<header>
+  		<h1>Disney Renaissance Survey</h1>
+  	</header>
+  	<main>
+  	  <h1>Survey</h1>
+  	  <p>
+  	  	Background information: Disney Renaissance Movies are popularly recognized as the collection of animated Disney movies that were released in the period spanning from 1989-1999, starting with the release of The Little Mermaid and ending with the release of Tarzan.
+  	  <form name="disney-form" id="survey">
+  	  	<div class="question">
+  	  	  <p>
+  	  	    First name:
+  	  	  </p>
+  	  	  <input type="text" name="firstname" />
+  	  	</div>
+  	  	<div class="question">
+  	  	  <p>
+  	  	    Best Disney Renaissance Movie:
+  	     </p>
+  	  	  <input type="radio" name="movie" />The Little Mermaid
+  	  	  <input type="radio" name="movie" />Mulan
+  	  	  <input type="radio" name="movie" />Hercules
+  	  	  <input type="radio" name="movie" />The Lion King
+  	  	  <input type="radio" name="movie" />Beauty and the Beast
+  	  	  <input type="radio" name="movie" />Pocahontas
+  	  	  <input type="radio" name="movie" />Other
+  	  	</div>
+  	  	<div class="question">
+  	  	  <p>
+  	  	    Best Disney Renaissance Anthem:
+  	  	  </p>
+  	  	  <input type="radio" name="song" />Reflection
+  	  	  <input type="radio" name="song" />Colors of the Wind
+  	  	  <input type="radio" name="song" />Go the Distance
+  	  	  <input type="radio" name="song" />Be Our Guest
+  	  	  <input type="radio" name="song" />Hakuna Matata
+  	  	  <input type="radio" name="song" />Other
+  	  	</div>
+  	  	<div class="question">
+  	  	  <p>
+  	  	    On a scale from 1-10, rate how much influence Disney Renaissance Movies had on your childhood
+  	  	  </p>
+  	  	  <input type="number" name="influence" id="rate" />
+  	  	</div>
+  	  	<div class="question">
+  	  	  <input type="reset" name="resetbutton" value="reset" />
+  	  	  <input type="button" onclick="submitdisney()" value="submit" />
+  	  	</div>
+  	  </form>
+    </main>
+    <footer>
+      <p>
+      	Created by Abigail Wezelis on February 14, 2017
+      </p>
+    </footer>
+  </body>
+</html>
+
