@@ -5,9 +5,9 @@ function submitdisney()
 	var songs = document.getElementsByName("song");
 	var rating = document.getElementById("rate");
 
-	if (firstname == "")
+	if (firstname === "")
 	{
-		alert("You must provide your firstname.");
+		alert("You must provide your " + document.forms["disney-form"]["firstname"].getAttribute("name"));
 		return;
 	}
 
@@ -18,9 +18,9 @@ function submitdisney()
 		if (movies[i].checked == true)
 			movie_checked = true;
 	}
-	if (movie_checked == false)
+	if (movie_checked === false)
 	{
-		alert("You must choose a favorite movie");
+		alert("You must choose a favorite " + document.forms["disney-form"]["movie"][0].getAttribute("name"));
 		return;
 	}
 
@@ -31,15 +31,15 @@ function submitdisney()
 			song_checked = true;
 	}
 
-	if (song_checked == false)
+	if (song_checked === false)
 	{
-		alert("You must choose a favorite anthem");
+		alert("You must choose a favorite " + document.forms["disney-form"]["song"][0].getAttribute("name"));
 		return;
 	}
 
 	if (!(rate.value > 0 && rate.value <= 10))
 	{
-		alert("Your rating must be a number between 1 and 10");
+		alert("Your " + document.getElementById("rate").getAttribute("name") + " must be a number between 1 and 10");
 		return;
 	}
 
